@@ -1,0 +1,6 @@
+services:
+  bot:
+    build: .
+    volumes:
+      - ./database.db:/app/database.db  
+    restart: unless-stopped
